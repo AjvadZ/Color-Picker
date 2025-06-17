@@ -8,6 +8,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   background: rgba(31, 41, 55, 1);
+  padding: 2em;
 }
 
 #color-scheme {
@@ -26,6 +27,7 @@ body {
 
 .color-bar p {
   height: 550px;
+  border-radius: .5rem;
 }
 
 .color-bar span {
@@ -79,4 +81,42 @@ button {
   cursor: pointer;
   border: none;
   color: white;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 1em;
+  }
+
+  #color-scheme {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 15px;
+  }
+
+  .color-bar {
+    font-size: 20px;
+    gap: 0.5rem;
+    grid-template-rows: 1fr;
+  }
+
+  .color-bar p {
+    height: 80px;
+  }
+
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 0;
+    gap: 0.5rem;
+  }
+
+  select, button {
+    width: 100%;
+    max-width: 312px;
+  }
+
+  input {
+    width: 60px;
+  }
 }
