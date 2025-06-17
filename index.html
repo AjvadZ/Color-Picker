@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Scheme Generator</title>
+    <link rel="stylesheet" href="./style.css"> 
+</head>
+<body>
+    <nav>
+
+        <label for="color-picker" aria-label="Pick a Color"></label>
+        <input type="color" id="color-picker">
+      
+        <label for="theme" aria-label="For selecting Triad"></label>
+        <select id="theme" name="theme">
+            <option value="monochrome" selected>Monochrome</option>
+            <option value="monochrome-dark">Monochrome Dark</option>
+            <option value="monochrome-light">Monochrome Light</option>
+            <option value="analogic">Analogic</option>
+            <option value="complement">Complement</option>
+            <option value="analogic-complement">Analogic Complement</option>
+            <option value="triad">Triad</option>
+            <option value="quad">Quad</option>
+        </select>
+        <button id="generator">Get color scheme</button>
+
+    </nav>
+
+
+    <main id="color-scheme">
+       
+
+
+    </main>
+
+
+
+    <script src="./main.js" type="module"></script>
+</body>
+</html>
